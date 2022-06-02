@@ -17,6 +17,7 @@ kind: StatefulSet
 apiVersion: apps/v1
 metadata:
   name: mysql-db
+  namespace: tenant-a
   labels:
     app: mysql-db
     tier: db

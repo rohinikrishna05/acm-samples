@@ -22,6 +22,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: spring-profile
+  namespace: tenant-a
 data:
   SPRING_PROFILES_ACTIVE: "DATABASE"
 # [END anthosbaremetal_common_springprofile_mysql_configmap_spring_profile]

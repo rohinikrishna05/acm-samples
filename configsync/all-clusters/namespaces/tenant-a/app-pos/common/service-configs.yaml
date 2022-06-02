@@ -17,6 +17,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: service-configs
+  namespace: tenant-a
 data:
   INVENTORY_EP: "http://inventory-svc:8080"
   PAYMENTS_EP: "http://payments-svc:8080"
