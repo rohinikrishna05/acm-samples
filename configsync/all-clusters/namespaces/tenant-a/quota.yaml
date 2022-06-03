@@ -11,17 +11,17 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-# [START anthosconfig_multi_cluster_fanout_tenant_a_resource_quota] 
-apiVersion: v1
-kind: ResourceQuota
-metadata:
-  labels:
-    owner: platform-team
-  name: hard-limit
-  namespace: tenant-a
-spec:
-  hard:
-    cpu: "1000"
-    memory: 100Gi
-    pods: "100"
-# [END anthosconfig_multi_cluster_fanout_tenant_a_resource_quota] 
+# [START anthosconfig_multi_cluster_fanout_tenant_a_resource_quota]
+#apiVersion: v1
+#kind: ResourceQuota
+#metadata:
+#  labels:
+#    owner: platform-team
+#  name: hard-limit
+#  namespace: tenant-a
+#spec:
+#  hard:
+#    cpu: "1000"
+#    memory: 50Gi
+#    pods: "100"
+# [END anthosconfig_multi_cluster_fanout_tenant_a_resource_quota]
