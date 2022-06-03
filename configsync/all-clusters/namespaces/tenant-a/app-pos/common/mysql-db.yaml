@@ -16,6 +16,8 @@
 kind: StatefulSet
 apiVersion: apps/v1
 metadata:
+  annotations:
+    configsync.gke.io/cluster-name-selector: edge-central1
   name: mysql-db
   namespace: tenant-a
   labels:
@@ -65,6 +67,8 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
+  annotations:
+    configsync.gke.io/cluster-name-selector: edge-central1
   name: mysql-db
   namespace: tenant-a
   labels:
@@ -86,6 +90,8 @@ spec:
 apiVersion: v1
 kind: ConfigMap
 metadata:
+  annotations:
+    configsync.gke.io/cluster-name-selector: edge-central1  
   name: mysql-db-config
   namespace: tenant-a
   labels:

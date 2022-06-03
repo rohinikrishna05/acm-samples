@@ -18,6 +18,8 @@ kind: Service
 metadata:
   name: api-server-svc
   namespace: tenant-a
+  annotations:
+    configsync.gke.io/cluster-name-selector: edge-central1  
 spec:
   type: ClusterIP
   selector:

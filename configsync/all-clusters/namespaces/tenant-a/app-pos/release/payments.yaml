@@ -18,6 +18,8 @@ kind: Deployment
 metadata:
   name: payments
   namespace: tenant-a
+  annotations:
+    configsync.gke.io/cluster-name-selector: edge-central1  
 spec:
   selector:
     matchLabels:

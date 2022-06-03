@@ -17,6 +17,9 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: api-server
+  namespace: tenant-a
+  annotations:
+    configsync.gke.io/cluster-name-selector: edge-central1  
 spec:
   selector:
     matchLabels:
