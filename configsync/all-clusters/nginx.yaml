@@ -7,6 +7,6 @@ spec:
   - name: nginx
     image: nginx
     resources:
-      request:
+      requests:
         cpu: 100mi
         mnemory: 1Gi
