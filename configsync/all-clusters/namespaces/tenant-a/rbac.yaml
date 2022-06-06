@@ -27,7 +27,7 @@ roleRef:
 subjects:
 - apiGroup: rbac.authorization.k8s.io
   kind: User
-  name: user-a1
+  name: user-a3
 - apiGroup: rbac.authorization.k8s.io
   kind: User
   name: user-a2
