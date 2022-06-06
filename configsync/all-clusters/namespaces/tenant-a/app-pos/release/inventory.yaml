@@ -20,7 +20,7 @@ metadata:
   namespace: tenant-a
   annotations:
     configsync.gke.io/cluster-name-selector: edge-central1 
-    config.kubernetes.io/depends-on: apps/v1/namespaces/tenant-a/StatefulSet/mysql-db 
+    config.kubernetes.io/depends-on: apps/namespaces/tenant-a/StatefulSet/mysql-db 
 spec:
   selector:
     matchLabels:
