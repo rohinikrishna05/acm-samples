@@ -4,9 +4,5 @@ metadata:
   name: nginx
 spec:
   containers:
-    - name: nginx
-      image: nginx
-      resources:
-        requests:
-          cpu: 200mi
-          memory: 1Gi
+  - name: nginx
+    image: nginx
