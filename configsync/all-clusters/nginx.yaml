@@ -8,5 +8,5 @@ spec:
       image: nginx
       resources:
         requests:
-          cpu: 350mi
-          memory: 4Gi
+          cpu: 200mi
+          memory: 1Gi
