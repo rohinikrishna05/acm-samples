@@ -22,7 +22,7 @@ metadata:
     configsync.gke.io/cluster-name-selector: edge-central1
     config.kubernetes.io/depends-on: apps/namespaces/tenant-a/StatefulSet/mysql-db
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: inventory
