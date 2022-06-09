@@ -10,5 +10,5 @@ spec:
       kinds:
       - Pod
   parameters:
-    cpu: 300m
+    cpu: 400m
     memory: 2Gi
