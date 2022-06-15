@@ -11,4 +11,4 @@ spec:
       - Pod
   parameters:
     cpu: 300m
-    memory: 2Gi
+    memory: 1Gi
