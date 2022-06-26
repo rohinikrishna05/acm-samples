@@ -18,6 +18,8 @@ kind: Service
 metadata:
   name: inventory-svc
   namespace: tenant-a
+  annotations:
+    configmanagement.gke.io/cluster-selector: selector-env-edge  
 spec:
   type: ClusterIP
   selector:

@@ -4,3 +4,10 @@ metadata:
   name: cluster-east
   labels:
     env: cloud
+---
+kind: Cluster
+apiVersion: clusterregistry.k8s.io/v1alpha1
+metadata:
+  name: edge-central
+  labels:
+    env: edge

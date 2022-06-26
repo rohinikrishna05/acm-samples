@@ -19,7 +19,7 @@ metadata:
   name: api-server-lb
   namespace: tenant-a
   annotations:
-    configsync.gke.io/cluster-name-selector: edge-central1
+    configmanagement.gke.io/cluster-selector: selector-env-edge
 spec:
   type: LoadBalancer
   selector:

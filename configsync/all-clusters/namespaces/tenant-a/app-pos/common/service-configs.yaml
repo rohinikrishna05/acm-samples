@@ -17,7 +17,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   annotations:
-    configsync.gke.io/cluster-name-selector: edge-central1  
+    configmanagement.gke.io/cluster-selector: selector-env-edge   
   name: service-configs
   namespace: tenant-a
 data:
