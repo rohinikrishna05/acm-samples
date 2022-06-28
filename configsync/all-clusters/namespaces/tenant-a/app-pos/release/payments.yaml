@@ -19,7 +19,7 @@ metadata:
   name: payments
   namespace: tenant-a
   annotations:
-    configsync.gke.io/cluster-name-selector: edge-central1  
+    configmanagement.gke.io/cluster-selector: selector-env-edge
     config.kubernetes.io/depends-on: apps/namespaces/tenant-a/StatefulSet/mysql-db
 spec:
   selector:
