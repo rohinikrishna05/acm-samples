@@ -1,0 +1,23 @@
+apiVersion: templates.gatekeeper.sh/v1beta1
+kind: ConstraintTemplate
+metadata:
+  name: hpalimitreplicas
+spec:
+  crd:
+    spec:
+      names:
+        kind: HPALimitReplicas
+      validation:
+        # Schema for the `parameters` field
+        openAPIV3Schema:
+          properties:
+            invalidMaxReplicas:
+              type: integer
+  targets:
+    - target: admission.k8s.gatekeeper.sh
+      rego: |
+        package hpalimitreplicas
+        violation[{"msg": msg}] {
+          input.review.object.spec.maxReplicas > input.parameters.invalidMaxReplicas
+          msg := sprintf(" Replicas greater than maximum allowed limit")
+        }
