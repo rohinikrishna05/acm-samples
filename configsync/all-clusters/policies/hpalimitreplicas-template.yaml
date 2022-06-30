@@ -19,5 +19,5 @@ spec:
         package hpalimitreplicas
         violation[{"msg": msg}] {
           input.review.object.spec.maxReplicas > input.parameters.invalidMaxReplicas
-          msg := sprintf(" Replicas greater than ",[input.parameters.invalidMaxReplicas])
+          msg := sprintf(" Replicas greater than maximum allowed limit")
         }
