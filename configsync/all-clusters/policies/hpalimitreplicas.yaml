@@ -8,7 +8,7 @@ spec:
   enforcementAction: deny
   match:
     kinds:
-      - apiGroups: [""]
+      - apiGroups: ["autoscaling"]
         kinds: ["HorizontalPodAutoscaler"]
 #    namespaces: ["*"]
 #    alternatively, scope by a selector
