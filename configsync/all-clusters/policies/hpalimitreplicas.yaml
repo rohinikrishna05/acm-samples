@@ -4,11 +4,11 @@ metadata:
   name: hpalimitreplicasconstraint
 spec:
   parameters:
-    invalidMaxReplicas: 5
+    maxReplicas: 5
   enforcementAction: deny
   match:
     kinds:
-      - apiGroups: ["autoscaling"]
+      - apiGroups: [""]
         kinds: ["HorizontalPodAutoscaler"]
 #    namespaces: ["*"]
 #    alternatively, scope by a selector
