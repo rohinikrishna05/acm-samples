@@ -8,5 +8,5 @@ spec:
   enforcementAction: deny
   match:
     kinds:
-      - apiGroups: [""]
+      - apiGroups: ["autoscaling"]
         kinds: ["HorizontalPodAutoscaler"]
