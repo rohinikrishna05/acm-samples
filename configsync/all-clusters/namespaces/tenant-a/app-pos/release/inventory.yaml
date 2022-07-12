@@ -22,7 +22,7 @@ metadata:
     configmanagement.gke.io/cluster-selector: selector-env-edge
     config.kubernetes.io/depends-on: apps/namespaces/tenant-a/StatefulSet/mysql-db
 spec:
-  replicas: 2
+  replicas: 3
   selector:
     matchLabels:
       app: inventory
